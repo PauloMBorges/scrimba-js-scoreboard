@@ -2,6 +2,8 @@ let homeScoreEl = document.getElementById('home-score');
 let homeScore = 0;
 let guestScoreEl = document.getElementById('guest-score');
 let guestScore = 0;
+let winnerHome = document.getElementById('winner-home');
+let winnerGuest = document.getElementById('winner-guest');
 
 function addOneHome() {
     homeScore += 1
@@ -34,8 +36,7 @@ function addThreeGuest() {
 }
 
 function checkWinner() {
-    let winnerHome = document.getElementById('winner-home');
-    let winnerGuest = document.getElementById('winner-guest');
+
     if (homeScore > guestScore) {
         winnerHome.style.border = '2px solid #4FF94F';
         winnerGuest.style.border = '1px solid #9AABD8';
@@ -48,5 +49,14 @@ function checkWinner() {
         winnerHome.style.border = '1px solid #9AABD8';
         winnerGuest.style.border = '1px solid #9AABD8';
     }
+}
+
+function newGame() {
+    homeScore = 0;
+    homeScoreEl.textContent = homeScore;
+    guestScore = 0;
+    guestScoreEl.textContent = guestScore;
+    winnerHome.style.border = '1px solid #9AABD8';
+    winnerGuest.style.border = '1px solid #9AABD8';
 }
 
