@@ -8,28 +8,28 @@
 </head>
 <body>
     <div class="container">
-        
+
         <div class="board-container">
             <h1 class="board-title">HOME</h1>
             <div class="board-score">
-                <h1 class="board-points">0</h1>
+                <h1 class="board-points" id="home-score">0</h1>
             </div>
             <div class="buttons-container">
-                <button class="btn">+1</button>
-                <button class="btn">+2</button>
-                <button class="btn">+3</button>
+                <button class="btn" onclick="addOneHome()">+1</button>
+                <button class="btn" onclick="addTwoHome()">+2</button>
+                <button class="btn" onclick="addThreeHome()">+3</button>
             </div>
         </div>
 
         <div class="board-container">
             <h1 class="board-title">GUEST</h1>
             <div class="board-score">
-                <h1 class="board-points">0</h1>
+                <h1 class="board-points" id="guest-score">0</h1>
             </div>
             <div class="buttons-container">
-                <button class="btn">+1</button>
-                <button class="btn">+2</button>
-                <button class="btn">+3</button>
+                <button class="btn" onclick="addOneGuest()">+1</button>
+                <button class="btn" onclick="addTwoGuest()">+2</button>
+                <button class="btn" onclick="addThreeGuest()">+3</button>
             </div>
         </div>
     </div>
