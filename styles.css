@@ -39,7 +39,9 @@ body {
     position: relative;
     width: 412.5px;
     height: 225px; 
+    border: 1px solid #9AABD8;
 }
+
 
 .board-score::before {
     content: '000';

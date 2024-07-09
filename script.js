@@ -32,3 +32,21 @@ function addThreeGuest() {
     guestScore += 3
     guestScoreEl.textContent = guestScore;
 }
+
+function checkWinner() {
+    let winnerHome = document.getElementById('winner-home');
+    let winnerGuest = document.getElementById('winner-guest');
+    if (homeScore > guestScore) {
+        winnerHome.style.border = '2px solid #4FF94F';
+        winnerGuest.style.border = '1px solid #9AABD8';
+    }
+    else if (guestScore > homeScore){
+        winnerGuest.style.border = '2px solid #4FF94F';
+        winnerHome.style.border = '1px solid #9AABD8';
+    }
+    else {
+        winnerHome.style.border = '1px solid #9AABD8';
+        winnerGuest.style.border = '1px solid #9AABD8';
+    }
+}
+
